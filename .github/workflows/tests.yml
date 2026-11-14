@@ -11,6 +11,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      BASE_URL: https://api.realworld.show/api
+      API_USERNAME: test123@testemail.com
+      API_PASSWORD: password
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
