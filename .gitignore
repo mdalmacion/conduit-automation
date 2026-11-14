@@ -4,7 +4,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .env
+.env.example
 .coverage
 htmlcov/
 reports/
 .DS_Store
+.idea/vcs.xml
+
