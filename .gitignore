@@ -10,4 +10,6 @@ htmlcov/
 reports/
 .DS_Store
 .idea/vcs.xml
+probe.py
+probe2.py
 

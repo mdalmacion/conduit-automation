@@ -14,7 +14,8 @@ def test_login_registered(auth_service):
     assert response.status_code == 200, 'Unable to login'
 
 def test_already_registered(auth_service):
-    response_1 = auth_service.register('test123@testemail.com', 'testuser', 'password')
     with pytest.raises(UserAlreadyExistsException):
+        auth_service.register('test123@testemail.com', 'testuser', 'password')
+        #second call is needed when running the test on its own
         auth_service.register('test123@testemail.com', 'testuser', 'password')
 
